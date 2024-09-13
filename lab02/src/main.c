@@ -28,7 +28,7 @@ void togglexn(GPIO_TypeDef *port, int n) {
     if(port->ODR & 1 << n) {//output the data for that port and read the port value (if the port is 1, then:)
         port->BRR = (1 << n);//reset the port and change it to 0
     } else {//if port is 0, then:
-        port->BSRR = (1 << n);//set the port to 1
+        port->BSRR = (1 << n);//set the port to the value from port n
     }
 }
 
