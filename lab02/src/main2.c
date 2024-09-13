@@ -5,6 +5,9 @@ void initb();
 void initc();
 void togglexn(GPIO_TypeDef *port, int n);
 void init_exti();
+void EXTI0_1_IRQHandler();
+void EXTI2_3_IRQHandler();
+void EXTI4_15_IRQHandler();
 
 int main(void) {
     //autotest();//
